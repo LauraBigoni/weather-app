@@ -1,0 +1,81 @@
+/* * CSS reset * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* * Generiche * */
+html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  line-height: 1;
+  background: linear-gradient(#eaedfd, #89a4f8);
+  background-attachment: fixed;
+  color: #000;
+}
+
+main {
+  text-align: center;
+}
+
+/* * Container * */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* * Logo coding week * */
+header img {
+  width: 56px;
+}
+
+/* * Info meteo * */
+.weather-info {
+  margin-bottom: 32px;
+}
+
+.weather-icon {
+  transition: transform 1s, opacity 1s;
+}
+
+.weather-wind, .weather-temperature, .weather-other {
+  font-size: 50px;
+}
+
+.weather-location, .suggestion {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* * Pannello consigli * */
+.suggestion-panel {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+
+  transition: opacity 1s, transform 1s;
+}
+
+.suggestion-panel h4 {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(115, 148, 175);
+  margin-bottom: 12px;
+}
+
+/* * Effetti di caricamento * */
+.js-loading .weather-icon {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-loading .suggestion-panel {
+  opacity: 0;
+  transform: scale(0);
+}
