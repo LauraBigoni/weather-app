@@ -44,13 +44,21 @@ header img {
   transition: transform 1s, opacity 1s;
 }
 
-.weather-wind, .weather-temperature, .weather-other {
-  font-size: 50px;
+.weather-wind, .weather-temperature, .weather-humidity {
+  font-size: 24px;
 }
 
 .weather-location, .suggestion {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 28px;
+}
+
+/* * Stats * */
+.stats {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* * Pannello consigli * */
